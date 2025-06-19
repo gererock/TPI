@@ -25,7 +25,9 @@ public class VistaTPI {
         System.out.println("0. SALIR");
         return Integer.parseInt(scanner.nextLine());
     }
-    public int menuCampeonato(){
+    public void menuCampeonato(){
+        System.out.println("aaaaa");
+        
         
     }
 }
