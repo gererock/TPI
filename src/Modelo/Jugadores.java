@@ -2,11 +2,11 @@
  * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
  * Click nbfs://nbhost/SystemFileSystem/Templates/Classes/Class.java to edit this template
  */
-package tpi.Modelo.Jugadores;
+package Modelo;
 
 import java.util.ArrayList;
 import java.util.List;
-import tpi.Modelo.Equipos.Equipos;
+import Modelo.Equipos;
 
 /**
  *
