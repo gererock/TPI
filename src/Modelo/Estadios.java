@@ -2,13 +2,11 @@
  * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
  * Click nbfs://nbhost/SystemFileSystem/Templates/Classes/Class.java to edit this template
  */
-package Modelo;
-
-/**
+/*
  *
  * @author Geremias Rocchietti
  */
-public abstract class Estadios {
+/*public abstract class Estadios {
     public String nombreEstadio;
     public String ubicacionEstadio;
 
@@ -43,4 +41,22 @@ public abstract class Estadios {
     
     
     
+}*/
+// ======================  modelo/Estadios.java  ======================
+package modelo;
+
+/**
+ *  Un estadio de fútbol.  “Partidos” hereda de esta clase.
+ */
+public class Estadios {
+
+    public String nombreEstadio;
+    public String ubicacionEstadio;
+
+    public String getNombreEstadio() { return nombreEstadio; }
+    public void   setNombreEstadio(String nombreEstadio) { this.nombreEstadio = nombreEstadio; }
+
+    public String getUbicacionEstadio() { return ubicacionEstadio; }
+    public void   setUbicacionEstadio(String ubicacionEstadio) { this.ubicacionEstadio = ubicacionEstadio; }
 }
+

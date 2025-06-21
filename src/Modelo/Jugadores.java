@@ -1,18 +1,17 @@
 /*
  * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
  * Click nbfs://nbhost/SystemFileSystem/Templates/Classes/Class.java to edit this template
- */
-package Modelo;
+ *//*
 
 import java.util.ArrayList;
 import java.util.List;
 import Modelo.Equipos;
-
+*/
 /**
  *
  * @author Geremias Rocchietti
  */
-public class Jugadores extends Equipos {
+/*public class Jugadores extends Equipos {
     private String NombreJugador;
     private String edadJugador;
     private String nacionalidadJugador;
@@ -116,4 +115,44 @@ public class Jugadores extends Equipos {
     
     
     
+}*/
+// ======================  modelo/Jugadores.java  ======================
+
+/**
+ *  Un jugador de fútbol.  Hereda “nombreEquipo” porque
+ *  extiende Equipos (requisito de la vista actual).
+ */
+package modelo;
+
+import java.util.ArrayList;
+import java.util.List;
+
+public class Jugadores extends Equipos {
+
+    private String nombreJugador;
+    private int    edadJugador;
+    private String nacionalidadJugador;
+    private int    golesJugador   = 0;
+    private int    numeroCamiseta = 0;
+
+    private final List<Jugadores> sanciones = new ArrayList<>();
+
+    /* ---------- GETTERS / SETTERS ---------- */
+    public String getNombreJugador() { return nombreJugador; }
+    public void setNombreJugador(String nombreJugador) { this.nombreJugador = nombreJugador; }
+
+    public int getEdadJugador() { return edadJugador; }
+    public void setEdadJugador(int edadJugador) { this.edadJugador = edadJugador; }
+
+    public String getNacionalidadJugador() { return nacionalidadJugador; }
+    public void setNacionalidadJugador(String nacionalidadJugador) { this.nacionalidadJugador = nacionalidadJugador; }
+
+    public int getGolesJugador() { return golesJugador; }
+    public void setGolesJugador(int golesJugador) { this.golesJugador = golesJugador; }
+
+    public int getNumeroCamiseta() { return numeroCamiseta; }
+    public void setNumeroCamiseta(int numeroCamiseta) { this.numeroCamiseta = numeroCamiseta; }
+
+    public List<Jugadores> getSanciones() { return sanciones; }
 }
+

@@ -3,7 +3,9 @@
  * Click nbfs://nbhost/SystemFileSystem/Templates/Classes/Main.java to edit this template
  */
 package tpi;
-
+// ---------------------------  Main.java  ----------------------------
+import controlador.ControladorTPI;
+import vista.VistaTPI;
 /**
  *
  * @author Geremias Rocchietti
@@ -15,6 +17,16 @@ public class TPI {
      */
     public static void main(String[] args) {
         
+        VistaTPI vista = new VistaTPI();
+        ControladorTPI ctrl = new ControladorTPI(vista);
+        ctrl.iniciar();
     }
     
 }
+
+
+
+
+
+    
+
